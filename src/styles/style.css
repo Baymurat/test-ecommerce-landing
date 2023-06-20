@@ -202,3 +202,96 @@
   line-height: 9px;
   letter-spacing: 0.1px;
 }
+
+.features {
+  overflow-x: scroll;
+  display: flex;
+  gap: 12px;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+}
+
+.features::-webkit-scrollbar {
+  display: none;
+}
+
+.feature {
+  padding: 15px;
+  min-width: 150px;
+  height: 200px;
+  background: var(--background-gradient-color-vertical);
+  border-radius: 30px;
+  scroll-snap-align: start;
+  position: relative;
+  overflow: hidden;
+}
+
+.feature .feature__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  padding-bottom: 5px;
+}
+
+.feature .feature__description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  opacity: 0.6;
+}
+
+.feature__image {
+  position: absolute;
+}
+
+.marktetplace-1 {
+  bottom: 0;
+  right: 20%;
+  width: 60px;
+  height: 45px;
+}
+
+.marktetplace-2 {
+  left: -2px;
+  bottom: -5px;
+  width: 35px;
+  height: 35px;
+}
+
+.marktetplace-3 {
+  right: -10px;
+  bottom: 20%;
+  width: 60px;
+  height: 46px;
+}
+
+.marktetplace-4 {
+  left: -5px;
+  bottom: 25%;
+  width: 90px;
+  height: 20px;
+}
+
+.bank-image {
+  bottom: -5px;
+  left: 0;
+}
+
+.badge-image {
+  bottom: -5px;
+  width: 120px;
+  right: 1%;
+}
+
+.truck-image {
+  bottom: -5px;
+  width: 120px;
+  right: 1%;
+}
+
+.warehouse-image {
+  bottom: 0;
+  width: 120px;
+}
