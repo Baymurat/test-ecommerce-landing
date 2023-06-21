@@ -482,6 +482,11 @@ ul li {
   gap: 12px;
 }
 
+.about__image img {
+  aspect-ratio: 3 / 1;
+  width: 100%;
+}
+
 .about__text {
   font-weight: 400;
   font-size: 16px;
@@ -685,5 +690,36 @@ a {
     padding-top: 19px;
     flex-direction: row;
     justify-content: space-between;
+  }
+}
+
+@media (min-width: 900px) {
+  .menu {
+    flex-direction: row;
+  }
+
+  .menu__title label {
+    display: none;
+  }
+
+  .menu .menu__items {
+    height: 100%;
+  }
+
+  .about {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .about .about__text {
+    width: 50%;
+  }
+
+  .about .about__image {
+    transform: translateY(-25%);
+  }
+
+  .about .about__image img {
+    aspect-ratio: 2/1;
   }
 }
