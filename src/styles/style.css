@@ -21,6 +21,10 @@
   --color-banner-title: #5C71B2;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 ul li {
   list-style: none;
 }
@@ -814,6 +818,14 @@ a {
 
 .menu__list input:checked~.menu__items {
   height: 275px;
+}
+
+footer .btn-fixed {
+  position: fixed;
+  inset: unset;
+  bottom: 50px;
+  right: 50px;
+  transform: rotate(-90deg);
 }
 
 .footer__copyrights {
