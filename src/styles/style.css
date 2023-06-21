@@ -65,7 +65,7 @@ ul li {
 }
 
 .searchbar {
-  align-self: flex-end;
+  /* align-self: flex-end; */
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -97,6 +97,25 @@ ul li {
 .control-buttons {
   display: flex;
   gap: 18px;
+}
+
+.control-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  align-items: center;
+}
+
+.control-btn button {
+  background: transparent;
+  border: none;
+}
+
+.control-btn span {
+  display: none;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--color-gray-3);
 }
 
 .slider {
@@ -739,6 +758,7 @@ a {
     padding-top: 19px;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
 
   .slider__banner .slider__banner-content {
@@ -931,5 +951,27 @@ a {
     padding-top: 16px;
     padding-bottom: 16px;
     gap: 18px;
+  }
+
+  .navbar {
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .searchbar {
+    position: static;
+  }
+
+  .searchbar input {
+    padding: 10px 16px 10px 24px;
+  }
+
+  .searchbar button {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .control-btn span {
+    display: block;
   }
 }
