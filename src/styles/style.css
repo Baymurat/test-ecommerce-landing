@@ -30,7 +30,8 @@ button:hover {
 }
 
 .wrapper {
-  padding: 0 24px;
+  width: 90vw;
+  margin: 0 auto;
 }
 
 .burger {
@@ -602,11 +603,11 @@ button.btn-arrow-right {
 }
 
 button.btn-arrow-right {
-  right: 0.5rem;
+  right: -1rem;
 }
 
 button.btn-arrow-left {
-  left: 0.5rem;
+  left: -1rem;
   transform: rotate(180deg);
 }
 
@@ -849,6 +850,10 @@ a {
 }
 
 @media (min-width: 900px) {
+  .wrapper {
+    width: 900px;
+  }
+
   .menu {
     flex-direction: row;
   }
@@ -1051,5 +1056,11 @@ a {
 
   #top-menu-bar {
     display: block;
+  }
+}
+
+@media (min-width: 1280px) {
+  .wrapper {
+    width: 1280px;
   }
 }
