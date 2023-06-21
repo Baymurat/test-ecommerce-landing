@@ -287,6 +287,10 @@ button:hover .icon-on-hover {
   border-radius: 50%;
 }
 
+.slider__control-ellipse.active-ellipse {
+  background-color: var(--color-primary);
+}
+
 .slider__banner-content {
   width: 270px;
 }
