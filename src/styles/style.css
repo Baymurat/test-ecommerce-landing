@@ -25,6 +25,11 @@ ul li {
   list-style: none;
 }
 
+button {
+  border: none;
+  background-color: transparent;
+}
+
 button:hover {
   cursor: pointer;
 }
@@ -183,6 +188,21 @@ button:hover {
   font-size: 14px;
   line-height: 17px;
   color: var(--color-gray-3);
+}
+
+button .icon-on-hover {
+  position: absolute;
+  z-index: -1;
+  visibility: hidden;
+}
+
+.control-btn:hover span {
+  color: var(--color-primary);
+}
+
+button:hover .icon-on-hover {
+  z-index: 1;
+  visibility: visible;
 }
 
 .slider {
@@ -446,9 +466,10 @@ button:hover {
 
 .product button {
   transition: background-image 150ms ease-in;
+
 }
 
-.product button:hover {
+.product .product__purchase-button button:hover {
   background-image: var(--background-gradient-color-horizontal);
 }
 
@@ -588,6 +609,15 @@ button.btn-arrow {
   width: 36px;
   height: 36px;
   z-index: 3;
+  background-color: #FFFFFF;
+}
+
+button.btn-arrow:hover {
+  box-shadow: 0px 0px 33px rgba(54, 88, 172, 0.4);
+}
+
+button.btn-arrow img {
+  width: 12px;
 }
 
 button.btn-arrow:focus-visible {
