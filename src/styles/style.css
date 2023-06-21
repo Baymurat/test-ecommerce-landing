@@ -234,6 +234,7 @@ ul li {
   scroll-snap-align: start;
   position: relative;
   overflow: hidden;
+  flex: 1 1 0px;
 }
 
 .feature .feature__title {
@@ -304,6 +305,8 @@ ul li {
 .warehouse-image {
   bottom: 0;
   width: 120px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .section-block {
@@ -867,5 +870,20 @@ a {
 
   .product:hover .product__info {
     flex-grow: 1
+  }
+
+  .feature {
+    min-width: 240px;
+    height: 260px;
+  }
+
+  .feature .feature__title {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .feature .feature__description {
+    font-size: 14px;
+    line-height: 17px;
   }
 }
