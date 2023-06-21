@@ -449,6 +449,7 @@ button:hover .icon-on-hover {
   scroll-snap-type: x mandatory;
   padding-top: 10px;
   padding-bottom: 10px;
+  scroll-behavior: smooth;
 }
 
 .product {
