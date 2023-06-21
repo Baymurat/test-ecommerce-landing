@@ -216,6 +216,7 @@ button:hover .icon-on-hover {
 }
 
 .slider__banners {
+  scroll-behavior: smooth;
   overscroll-behavior-x: contain;
   scroll-snap-type: x mandatory;
   display: flex;
